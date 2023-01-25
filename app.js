@@ -4,6 +4,12 @@ const express= require('express');
 const app=express();
 app.use(express.json());
 
+
+app.get("",(req,res)=>{
+    console.log("HEllo");
+    res.status(200).send("Heyy Welcome To Calculator API");
+})
+
 // API Sum
 
 app.get("/sum",(req,res)=>{
